@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Romania - Most Visited Locations</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+     
+
+    <!-- Main Content Section -->
+    <center><main><br><br>
+
+        <center><head>
+            <meta charset="utf-8">
+            <title>Digital Clock with Glowing Effect | CodingNepal</title>
+            <link rel="stylesheet" href="https://drive.google.com/uc?id=1MXOEUJGEj0ANYBk8-yoi8LpFbc-zbDmw">
+         </head>
+         <body>
+            <div class="wrapper">
+               <div class="display">
+                  <div id="time"></div>
+               </div>
+               <span></span>
+               <span></span>
+            </div>
+            <script>
+               setInterval(()=>{
+                 const time = document.querySelector(".display #time");
+                 let date = new Date();
+                 let hours = date.getHours();
+                 let minutes = date.getMinutes();
+                 let seconds = date.getSeconds();
+                 let day_night = "AM";
+                 if(hours > 12){
+                   day_night = "PM";
+                   hours = hours - 12;
+                 }
+                 if(seconds < 10){
+                   seconds = "0" + seconds;
+                 }
+                 if(minutes < 10){
+                   minutes = "0" + minutes;
+                 }
+                 if(hours < 10){
+                   hours = "0" + hours;
+                 }
+                 time.textContent = hours + ":" + minutes + ":" + seconds + " "+ day_night;
+               });
+            </script>
+         </body>
+      </html></center><br>
+        
+        <!-- City Selector Section -->
+        <section class="city-selector">
+            <label for="cities">Select a City:</label>
+            <select id="cities">
+                <option value="" disabled selected>Select a city</option>
+                <option value="bucharest">Bucharest</option>
+                <option value="cluj-napoca">Cluj-Napoca</option>
+                <option value="timisoara">Timișoara</option>
+                <option value="Iasi">Iasi</option>
+                <option value="constanta">Constanţa</option>
+                <option value="craiova">Craiova</option>
+                <option value="brasov">Brașov</option>
+                <option value="galati">Galaţi</option>
+                <option value="ploiesti">Ploieşti</option>
+                <option value="oradea">Oradea</option>
+                <option value="braila">Brăila</option>
+                <option value="arad">Arad</option>
+                <option value="pitesti">Piteşti</option>
+                <option value="sibiu">Sibiu</option>
+                <option value="bacau">Bacău</option>
+                <option value="targu-mures">Târgu Mureş</option>
+                <option value="baia-mare">Baia Mare</option>
+                <option value="buzau">Buzău</option>
+                <option value="satu-mare">Satu Mare</option>
+                <option value="botosani">Botoşani</option>
+                <option value="piatra-neamt">Piatra Neamţ</option>
+                <option value="ramnicu-valcea">Râmnicu Vâlcea</option>
+                <option value="suceava">Suceava</option>
+                <option value="focsani">Focşani</option>
+                <option value="drobeta-turnu-severin">Drobeta-Turnu Severin</option>
+                <option value="targu-jiu">Târgu Jiu</option>
+                <option value="targoviste">Târgovişte</option>
+                <option value="tulcea">Tulcea</option>
+                <option value="bistrita">Bistriţa</option>
+                <option value="resita">Resita</option>
+                <option value="slatina">Slatina</option>
+                <option value="calarasi">Călăraşi</option>
+                <option value="hunedoara">Hunedoara</option>
+                <option value="vaslui">Vaslui</option>
+                <option value="zalau">Zalău</option>
+                <option value="giurgiu">Giurgiu</option>
+                <!-- Add more cities here as needed -->
+            </select>
+            <button id="getWeather">Get Weather Details</button>
+        </section>
+
+        <!-- Weather Details Section -->
+        <section id="weatherDetails"></section>
+    </main></center>
+
+    <!-- Footer Section -->
+    <footer>
+        <center>
+          <div class="chip">
+            <iframe src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjjotsTk5g08u2LexdfUAQrQpsyVNuTwaSTVzUalhjx5cggUleQS2wFu6cdCzjP81KagCZ7bKZWdwaDvBbqCmlG9E18Hkdnej1_fjf77JspP8vfsnZlCH2zU5juG_Qc7ggpDgixu70WIRlJQWLH4aevf4G5IPHoF7sA0UeUXAue6pNANCC1h4ziVW_BCfty/s1600/Untitled%20design%20%283%29.jpg" width="300" height="250" frameborder="0" scrolling="no"></iframe>
+            <p>&copy; All Rights Reserved Chamuditha Lanka</p></center>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

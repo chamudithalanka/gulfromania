@@ -1,0 +1,74 @@
+.city-selector {
+    display: inline-block;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    width: 300px;
+}
+
+.city-selector h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.city-selector select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.city-selector button {
+    width: 100%;
+    padding: 10px;
+    background-color: #3367d6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.city-selector button:hover {
+    background-color: #2749a5;
+}
+
+/* Weather details section styling */
+#weatherDetails {
+    margin-top: 20px;
+}
+
+#weatherDetails img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+    .city-selector {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .city-selector h2 {
+        font-size: 16px;
+    }
+
+    .city-selector select,
+    .city-selector button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    #weatherDetails img {
+        max-width: 100%;
+        height: auto;
+    }
+}
